@@ -15,16 +15,16 @@
         </div>
     </header>
     <main class="container-conteudo">
-        <div class="container-conteudo_principal">
+        <form class="container-conteudo_principal">
             
                <input type="text" id="divida" name="divida" value="" placeholder="Insira o Valor da Dívida"
-                 onfocus="valorDaDivida()">
-               <input type="text" id="atraso" name="atraso" value="" onfocus="diasDeAtraso()">
-               <input type="text" id="juros" name="juros" value="" onfocus="taxaJuros()">
+                 onfocus="valorDaDivida(this.form)">
+               <input type="text" id="atraso" name="atraso" value="" onfocus="diasDeAtraso(this.form)">
+               <input type="text" id="juros" name="juros" value="" onfocus="taxaJuros(this.form)">
                <input type="text" id="resultado" name="resultado" value="" onfocus="this.blur()">
 
                <button class="botao" id="btn">Limpar Dados</button>
-        </div>
+        </form>
     </main>
     <footer class="container-final">
         <div class="container-final_conteudo">
